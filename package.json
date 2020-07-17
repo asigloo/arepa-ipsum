@@ -13,6 +13,7 @@
   "dependencies": {
     "@nuxt/components": "^1.0.7",
     "nuxt": "^2.13.0",
+    "nuxt-i18n": "^6.13.1",
     "nuxt-svgicon": "^1.2.7",
     "nuxt-webfontloader": "^1.1.0"
   },

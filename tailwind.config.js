@@ -6,6 +6,11 @@
 */
 module.exports = {
   theme: {
+    fontFamily: {
+      'display': ['Montserrat'],
+      'sans': ['Hind', '-apple-system', 'BlinkMacSystemFont'],
+      'serif': ['Montserrat', 'Georgia', 'Cambria']
+    },
     extend: {
       colors: {
         aguacate: {

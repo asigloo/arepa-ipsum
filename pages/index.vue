@@ -1,29 +1,12 @@
 <template>
   <div class="container">
-    <div>
+    <div class="flex flex-col items-center">
       <Logo />
-      <h1 class="title">
-        arepa-ipsum
+      <h1 class="title text-bg text-4xl md:text-6xl">
+        Arepa Ipsum
       </h1>
-      <Button type="aguacate">Awiwi</Button>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <p class="text-gray-700 mb-4">{{$t('description')}}</p>
+      <Button type="pernil" outline> {{ $t('dale-chamo') }}</Button>
     </div>
   </div>
 </template>
@@ -48,32 +31,16 @@ export default {}
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  @apply text-center font-display font-bold text-gray-700 mb-4
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.text-bg {
+  background-image: linear-gradient(
+    to top,
+    #f3ce9780 54%,
+    transparent 54%,
+    transparent 100%
+  );
+  width: fit-content;
 }
 </style>

@@ -49,8 +49,17 @@ export default {
     NuxtI18N,
   ],
   webfontloader: {
-    google: {
-      families: ['Montserrat:400,700'] //Loads Montserrat font with weights 400 and 700
+    custom: {
+      families: [
+          'Montserrat:n7',
+          'Hind:n3,n4'
+      ],
+      urls: [
+          // for each Google Fonts add url + options you want
+          // here add font-display option
+          'https://fonts.googleapis.com/css?family=Montserrat:700&display=swap',
+          'https://fonts.googleapis.com/css?family=Hind:300,400&display=swap'
+      ]
     }
   },
   /*

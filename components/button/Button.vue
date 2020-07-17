@@ -79,16 +79,16 @@ export default Button;
   }
 
   &.btn-pernil {
-    @apply bg-pernil-500 text-white;
+    @apply bg-pernil-400 text-white;
     &:hover {
-      @apply bg-pernil-700;
+      @apply bg-pernil-600;
     }
   }
 
   &.btn-outline-pernil {
-    @apply bg-transparent text-pernil-500 border border-pernil-500;
+    @apply bg-transparent text-pernil-400 border border-pernil-400;
     &:hover {
-      @apply bg-pernil-700 text-white;
+      @apply bg-pernil-600 text-white;
     }
   }
 }
