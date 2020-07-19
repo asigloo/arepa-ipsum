@@ -1,13 +1,8 @@
 <template>
-  <div class="home">
-    <div class="container">
-      Awiwi
-    </div>
-  </div>
+  <Header />
 </template>
 
 <script>
-
 export default {
 
 }

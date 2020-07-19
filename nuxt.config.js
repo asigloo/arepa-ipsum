@@ -45,7 +45,7 @@ export default {
   */
   modules: [
     'nuxt-webfontloader',
-    ['nuxt-svgicon', { tagName: 'as-icon', classPrefix: 'as-svg' }],
+    ['nuxt-svgicon', { tagName: 'arepa-icon', classPrefix: 'arepa-svg' }],
     NuxtI18N,
   ],
   webfontloader: {

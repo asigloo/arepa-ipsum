@@ -7,6 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "export": "nuxt export",
+    "export:serve": "nuxt build && nuxt export && nuxt serve",
     "serve": "nuxt serve",
     "test": "jest"
   },
