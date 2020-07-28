@@ -9,22 +9,22 @@ const props = {
   size: {
     default: 48,
     type: Number | String,
-  }
-}
+  },
+};
 
 const computed = {
-  getStyle()  {
+  getStyle() {
     return {
       width: `${this.size}px`,
-      height: `${this.size}px`
-    }
-  }
-}
+      height: `${this.size}px`,
+    };
+  },
+};
 
 export default {
   props,
   computed,
-}
+};
 </script>
 
 <style>

@@ -1,14 +1,19 @@
 <template>
   <div class="intro absolute w-full top-0 bg-white">
-    <div class="container" :class="{'animate': animate}">
+    <div class="container" :class="{ animate: animate }">
       <div class="flex flex-col items-center">
-        <Logo class="home-logo" ref="logo"  size="256"/>
+        <Logo class="home-logo" ref="logo" size="256" />
         <h1 class="title text-bg text-4xl md:text-6xl" ref="title">
           Arepa Ipsum
         </h1>
-        <div class="transition ease-in duration-700" :class="{'invisible': animate}">
-          <p class="text-gray-700 mb-4">{{$t('description')}}</p>
-          <Button type="pernil" outline @clicked="goToForm"> {{ $t('dale-chamo') }}</Button>
+        <div
+          class="transition ease-in duration-700"
+          :class="{ invisible: animate }"
+        >
+          <p class="text-gray-700 mb-4">{{ $t('description') }}</p>
+          <Button type="pernil" outline @clicked="finishIntro">
+            {{ $t('dale-chamo') }}</Button
+          >
         </div>
       </div>
     </div>
@@ -17,13 +22,14 @@
 
 <script>
 const ANIMATION_SPEED = 300;
+
 export default {
   name: 'arepaIntro',
   data: function() {
     return {
       animate: false,
       logoAnimationListener: null,
-    }
+    };
   },
   computed: {
     logoRef() {
@@ -31,10 +37,10 @@ export default {
     },
     titleRef() {
       return this.$refs.title;
-    }
+    },
   },
   methods: {
-    async goToForm() {
+    async finishIntro() {
       this.animate = true;
       this.animateLogo();
       this.animateTitle();
@@ -52,16 +58,16 @@ export default {
       this.logoRef.style.transform = `
           translate(${deltaX}px, ${deltaY}px)
           scale(${deltaW}, ${deltaH})
-        `
-      requestAnimationFrame(function() {
+        `;
+      requestAnimationFrame(
+        function() {
+          // Switch on animations.
+          this.logoRef.classList.add('animate');
 
-        console.log(this.logoRef);
-        // Switch on animations.
-        this.logoRef.classList.add('animate');
-
-        // GO GO GOOOOOO!
-        this.logoRef.style.transform = '';
-      }.bind(this));
+          // GO GO GOOOOOO!
+          this.logoRef.style.transform = '';
+        }.bind(this),
+      );
 
       this.logoRef.addEventListener('transitionend', this.finishedIntro);
     },
@@ -78,33 +84,32 @@ export default {
 
       this.titleRef.style.transform = `
           translate(${deltaX}px, ${deltaY}px)
-        `
-      requestAnimationFrame(function() {
-        // Switch on animations.
-        this.titleRef.classList.add('animate');
+        `;
+      requestAnimationFrame(
+        function() {
+          // Switch on animations.
+          this.titleRef.classList.add('animate');
 
-        // GO GO GOOOOOO!
-        this.titleRef.style.transform = '';
-      }.bind(this));
+          // GO GO GOOOOOO!
+          this.titleRef.style.transform = '';
+        }.bind(this),
+      );
     },
     finishedIntro() {
       this.$emit('finished');
-    }
+    },
   },
-  destroyed() {
-    this.logoRef.removeEventListener('animationend', this.logoAnimationListener);
-  }
-}
+  destroyed() {},
+};
 </script>
 
 <style>
-
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 
 .title {
-  @apply text-center font-display font-bold text-gray-700 mb-4
+  @apply text-center font-display font-bold text-gray-700 mb-4;
 }
 
 .text-bg {
@@ -119,10 +124,16 @@ export default {
 
 .logo.final {
   position: absolute;
-  width: 48px !important;
-  height: 48px !important;
-  top: .5rem;
-  left: 48px;
+  width: 24px !important;
+  height: 24px !important;
+  top: 1rem;
+  left: 1rem;
+
+  @media (min-width: 768px) {
+    left: 3rem;
+    width: 48px !important;
+    height: 48px !important;
+  }
 }
 
 .logo.animate {
@@ -130,10 +141,15 @@ export default {
 }
 
 .title.final {
-  @apply text-3xl;
+  @apply text-2xl;
+
   position: absolute;
   top: 0.5rem;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    @apply text-3xl;
+  }
 }
 
 .title.animate {
