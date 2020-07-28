@@ -1,13 +1,34 @@
 <template>
-  <div class="logo">
+  <div class="logo" ref="logo" :style="getStyle">
     <img src="@/assets/img/icon.svg" alt="Arepa Ipsum Logo" />
   </div>
 </template>
 
+<script>
+const props = {
+  size: {
+    default: 48,
+    type: Number | String,
+  },
+};
+
+const computed = {
+  getStyle() {
+    return {
+      width: `${this.size}px`,
+      height: `${this.size}px`,
+    };
+  },
+};
+
+export default {
+  props,
+  computed,
+};
+</script>
+
 <style>
 .logo {
-  width: 256px;
-  height: 256px;
   animation: 1s appear;
   margin: auto;
 }
