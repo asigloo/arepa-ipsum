@@ -1,12 +1,10 @@
 <template>
-  <div class="home">
+  <div class="result">
     <div class="container">
       <div class="grid grid-cols-1 sm:grid-cols-2">
-        <div class="card ">
+        <div class="card overflow-scroll ">
           <div class="px-6 py-4 text-gray-700 text-base">
-            <nuxt-link class="btn btn-aguacate" :to="'/result'"
-              >Submit</nuxt-link
-            >
+            <Ipsum />
           </div>
         </div>
       </div>
