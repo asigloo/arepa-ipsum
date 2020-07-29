@@ -1,24 +1,31 @@
 <template>
   <div>
+    <Header />
+      <Intro  v-show="showIntro"  @finished="finishedIntro"/>
     <Nuxt />
   </div>
 </template>
 
+<script>
+const data = () => ({
+  showIntro: true,
+})
+const methods = {
+  finishedIntro() {
+    localStorage.setItem('intro', false);
+    this.showIntro = false;
+  }
+}
+export default {
+  data,
+  methods,
+  mounted() {
+    this.$nextTick(() => {
+      this.showIntro = !localStorage.getItem('intro') ? true: JSON.parse(localStorage.getItem('intro'));
+    })
+  }
+}
+</script>
 <style>
-html {
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
 </style>
