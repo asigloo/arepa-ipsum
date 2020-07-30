@@ -1,7 +1,17 @@
-<babeledit_project version="1.2">
+<babeledit_project be_version="2.7.1" version="1.2">
+    <!--
+
+    BabelEdit project file
+    https://www.codeandweb.com/babeledit
+
+    This file contains meta data for all translations, but not the translation texts itself.
+    They are stored in framework-specific message files (.json / .vue / .yaml / .properties)
+
+    -->
     <preset_collections/>
     <framework>vue-json</framework>
     <filename>arepa-babel.babel</filename>
+    <source_root_dir></source_root_dir>
     <folder_node>
         <name></name>
         <children>
@@ -24,6 +34,91 @@
             </concept_node>
             <concept_node>
                 <name>description</name>
+                <definition_loaded>false</definition_loaded>
+                <description></description>
+                <comment></comment>
+                <default_text></default_text>
+                <translations>
+                    <translation>
+                        <language>en-US</language>
+                        <approved>false</approved>
+                    </translation>
+                    <translation>
+                        <language>es-ES</language>
+                        <approved>false</approved>
+                    </translation>
+                </translations>
+            </concept_node>
+            <concept_node>
+                <name>generate</name>
+                <definition_loaded>false</definition_loaded>
+                <description></description>
+                <comment></comment>
+                <default_text></default_text>
+                <translations>
+                    <translation>
+                        <language>en-US</language>
+                        <approved>false</approved>
+                    </translation>
+                    <translation>
+                        <language>es-ES</language>
+                        <approved>false</approved>
+                    </translation>
+                </translations>
+            </concept_node>
+            <concept_node>
+                <name>paragraphs</name>
+                <definition_loaded>false</definition_loaded>
+                <description></description>
+                <comment></comment>
+                <default_text></default_text>
+                <translations>
+                    <translation>
+                        <language>en-US</language>
+                        <approved>false</approved>
+                    </translation>
+                    <translation>
+                        <language>es-ES</language>
+                        <approved>false</approved>
+                    </translation>
+                </translations>
+            </concept_node>
+            <concept_node>
+                <name>paragraphs-validation</name>
+                <definition_loaded>false</definition_loaded>
+                <description></description>
+                <comment></comment>
+                <default_text></default_text>
+                <translations>
+                    <translation>
+                        <language>en-US</language>
+                        <approved>false</approved>
+                    </translation>
+                    <translation>
+                        <language>es-ES</language>
+                        <approved>false</approved>
+                    </translation>
+                </translations>
+            </concept_node>
+            <concept_node>
+                <name>spicy</name>
+                <definition_loaded>false</definition_loaded>
+                <description></description>
+                <comment></comment>
+                <default_text></default_text>
+                <translations>
+                    <translation>
+                        <language>en-US</language>
+                        <approved>false</approved>
+                    </translation>
+                    <translation>
+                        <language>es-ES</language>
+                        <approved>false</approved>
+                    </translation>
+                </translations>
+            </concept_node>
+            <concept_node>
+                <name>starts-with-arepa</name>
                 <definition_loaded>false</definition_loaded>
                 <description></description>
                 <comment></comment>
@@ -63,6 +158,7 @@
         </translation_file>
     </translation_files>
     <editor_configuration>
+        <save_empty_translations>true</save_empty_translations>
         <copy_templates>
             <copy_template>$t('%1')</copy_template>
             <copy_template></copy_template>
@@ -73,5 +169,6 @@
     <configuration>
         <indent>tab</indent>
         <format>namespaced-json</format>
+        <support_arrays>true</support_arrays>
     </configuration>
 </babeledit_project>

@@ -25,11 +25,31 @@ const props = {
     type: Boolean,
   },
 };
+
+const methods = {
+  generateLorem() {
+    this.result = generateLorem(
+      this.paragraphs,
+      this.spicy,
+      this.startWithArepa,
+    );
+  },
+};
+
+const watch = {
+  $route() {
+    this.generateLorem();
+  },
+};
+
 export default {
   name: 'arepaIpsum',
   data,
+  props,
+  methods,
+  watch,
   mounted() {
-    this.result = generateLorem(2, true);
+    this.generateLorem();
   },
 };
 </script>

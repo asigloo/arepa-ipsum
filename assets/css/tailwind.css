@@ -3,3 +3,13 @@
 @import 'tailwindcss/utilities';
 
 @import './buttons';
+@import './cards';
+@import './forms';
+
+.container {
+  @apply min-h-screen mx-auto px-4;
+}
+
+.page {
+  @apply pt-16;
+}

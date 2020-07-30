@@ -1,11 +1,15 @@
 <template>
-  <div class="result">
+  <div class="result page">
     <div class="container">
       <div class="grid grid-cols-1 sm:grid-cols-2">
-        <div class="card overflow-scroll ">
-          <div class="px-6 py-4 text-gray-700 text-base">
-            <Ipsum />
+        <div class="card result-card mb-8 mx-auto">
+          <div class="p-6 text-gray-700 text-base">
+            <Ipsum v-if="query" v-bind="query" />
           </div>
+        </div>
+        <div class="card mx-auto"></div>
+        <div class="card mx-auto">
+          <Form />
         </div>
       </div>
     </div>
@@ -13,11 +17,32 @@
 </template>
 
 <script>
-export default {};
+const watch = {
+  $route({ query }) {
+    this.query = query;
+  },
+};
+export default {
+  asyncData({ query }) {
+    const { paragraphs, spicy, startWithArepa } = query;
+    return {
+      query: {
+        paragraphs: parseInt(paragraphs),
+        spicy: !!JSON.parse(spicy),
+        startWithArepa: !!JSON.parse(startWithArepa),
+      },
+    };
+  },
+  watch,
+};
 </script>
 
 <style>
 .card {
-  @apply max-w-sm rounded-lg overflow-hidden shadow-lg;
+  @apply w-full;
+}
+.result-card {
+  overflow: scroll;
+  max-height: 600px;
 }
 </style>

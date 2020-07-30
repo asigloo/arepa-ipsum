@@ -1,7 +1,10 @@
 <template>
   <div class="intro absolute w-full top-0 bg-white">
-    <div class="container" :class="{ animate: animate }">
-      <div class="flex flex-col items-center">
+    <div
+      class="container  min-h-screen flex justify-center items-center"
+      :class="{ animate: animate }"
+    >
+      <div class="flex flex-col justify-center items-center">
         <Logo class="home-logo" ref="logo" size="256" />
         <h1 class="title text-bg text-4xl md:text-6xl" ref="title">
           Arepa Ipsum
@@ -11,7 +14,12 @@
           :class="{ invisible: animate }"
         >
           <p class="text-gray-700 mb-4">{{ $t('description') }}</p>
-          <Button type="pernil" outline @clicked="finishIntro">
+          <Button
+            type="pernil"
+            class="mx-auto block"
+            outline
+            @clicked="finishIntro"
+          >
             {{ $t('dale-chamo') }}</Button
           >
         </div>
@@ -104,10 +112,6 @@ export default {
 </script>
 
 <style>
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-
 .title {
   @apply text-center font-display font-bold text-gray-700 mb-4;
 }

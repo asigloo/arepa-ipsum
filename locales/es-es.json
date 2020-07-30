@@ -1,4 +1,9 @@
 {
 	"dale-chamo": "Dale chamo",
-	"description": "Generador de texto aleatorio basado en la cultura gastronómica venezolana."
+	"description": "Generador de texto aleatorio basado en la cultura gastronómica venezolana.",
+	"generate": "Genérame esta.",
+	"paragraphs": "Párrafos",
+	"paragraphs-validation": "El número de  párrafos debe ser mayor de 0",
+	"spicy": "Ponle picante",
+	"starts-with-arepa": "Comenzar con 'Arepa Ipsum...'"
 }
