@@ -1,0 +1,29 @@
+.form-group {
+  @apply flex mb-8;
+}
+
+.form-label {
+  @apply order-1 w-full text-left;
+}
+
+.form-control {
+  @apply order-2 w-full bg-gray-200 rounded-sm py-2 px-4;
+}
+
+.input-checkbox__input {
+  @apply mr-4 text-pernil-500;
+}
+
+.form-group--error {
+  @apply relative mb-12;
+}
+
+.form-group--error .form-control {
+  @apply bg-red-300;
+}
+
+.form-group--error .error {
+  @apply absolute text-sm text-red-300;
+
+  bottom: -35px;
+}

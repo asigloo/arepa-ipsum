@@ -1,13 +1,9 @@
 <template>
   <div class="home">
-    <div class="container">
+    <div class="container page">
       <div class="grid grid-cols-1 sm:grid-cols-2">
-        <div class="card ">
-          <div class="px-6 py-4 text-gray-700 text-base">
-            <nuxt-link class="btn btn-aguacate" :to="'/result'"
-              >Submit</nuxt-link
-            >
-          </div>
+        <div class="card">
+          <Form />
         </div>
       </div>
     </div>
@@ -15,11 +11,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: '',
+};
 </script>
 
-<style>
-.card {
-  @apply max-w-sm rounded-lg overflow-hidden shadow-lg;
-}
-</style>
+<style></style>

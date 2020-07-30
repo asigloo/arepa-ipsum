@@ -45,6 +45,7 @@ export default {
     'nuxt-webfontloader',
     ['nuxt-svgicon', { tagName: 'arepa-icon', classPrefix: 'arepa-svg' }],
     NuxtI18N,
+    '@asigloo/vue-dynamic-forms/nuxt',
   ],
   webfontloader: {
     custom: {
