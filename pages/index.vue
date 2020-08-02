@@ -1,9 +1,16 @@
 <template>
-  <div class="home">
-    <div class="container page">
-      <div class="grid grid-cols-1 sm:grid-cols-2">
-        <div class="card">
-          <Form />
+  <div class="home page">
+    <div class="container">
+      <div class="flex flex-wrap -mx-2">
+        <div class="box w-full md:w-4/6">
+          <div class="card">
+            <Form />
+          </div>
+        </div>
+        <div class="box px-2 w-full md:w-2/6">
+          <div class="card p-6">
+            Publicidad
+          </div>
         </div>
       </div>
     </div>

@@ -1,22 +1,27 @@
 <template>
   <div class="result page">
     <div class="container">
-      <div class="grid grid-cols-1 md:grid-cols-2">
-        <div
-          ref="result-card"
-          class="card result-card mb-8 mx-auto relative scroll-gradient"
-        >
-          <div
-            class="p-6 text-gray-700 text-base"
-            :class="scrollStyles"
-            @scroll="onResultScroll"
-          >
-            <Ipsum v-if="query" v-bind="query" />
+      <div class="flex flex-wrap -mx-2">
+        <div class="box px-2 w-full md:w-4/6">
+          <div ref="result-card" class="card result-card mb-8 relative">
+            <div
+              class="p-6 text-gray-700 text-base"
+              :class="scrollStyles"
+              @scroll="onResultScroll"
+            >
+              <Ipsum v-if="query" v-bind="query" />
+            </div>
           </div>
         </div>
-        <div class="card mx-auto"></div>
-        <div class="card mx-auto">
-          <Form />
+        <div class="box px-2 w-full md:w-2/6">
+          <div class="card p-6">
+            Publicidad
+          </div>
+        </div>
+        <div class="box px-2 w-full md:w-4/6">
+          <div class="card">
+            <Form />
+          </div>
         </div>
       </div>
     </div>
@@ -25,14 +30,14 @@
 
 <script>
 const data = () => ({
-  gradientBottom: true,
   gradientTop: false,
+  gradientBottom: true,
 });
 
 const computed = {
   scrollStyles() {
     return {
-      'scroll-gradient': true,
+      'scroll-gradient': this.query.paragraphs > 1,
       'scroll-gradient--top': this.gradientTop,
       'scroll-gradient--bottom': this.gradientBottom,
     };
@@ -59,6 +64,7 @@ export default {
     const { paragraphs, spicy, startWithArepa } = query;
     return {
       query: {
+        gradientBottom: parseInt(paragraphs) > 1,
         paragraphs: parseInt(paragraphs),
         spicy: !!JSON.parse(spicy),
         startWithArepa: !!JSON.parse(startWithArepa),
@@ -70,9 +76,6 @@ export default {
 </script>
 
 <style>
-.card {
-  @apply w-full;
-}
 .clipboard-btn {
   right: -8px;
   top: -8px;
