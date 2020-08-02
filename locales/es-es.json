@@ -1,9 +1,13 @@
 {
+	"all-rights-reserved": "Todos los derechos reservados",
+	"aria-language-menu": "Menú de cambio de idioma",
 	"dale-chamo": "Dale chamo",
 	"description": "Generador de texto aleatorio basado en la cultura gastronómica venezolana.",
 	"generate": "Genérame esta.",
 	"paragraphs": "Párrafos",
 	"paragraphs-validation": "El número de  párrafos debe ser mayor de 0",
+	"proudly-made-with": "Hecho en ",
 	"spicy": "Ponle picante",
-	"starts-with-arepa": "Comenzar con 'Arepa Ipsum...'"
+	"starts-with-arepa": "Comenzar con 'Arepa Ipsum...'",
+	"venezuela-true-love": "El verdadero amor, por la cultura venezolana"
 }

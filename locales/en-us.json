@@ -1,9 +1,13 @@
 {
+	"all-rights-reserved": "All Rights Reserved",
+	"aria-language-menu": "Language change menu",
 	"dale-chamo": "Let's do it \"Chamo\"",
 	"description": "Random text generator based on Venezuelan street food culture.",
 	"generate": "Generate.",
 	"paragraphs": "Paragraphs",
 	"paragraphs-validation": "The number of paragraphs must be greater than 0",
+	"proudly-made-with": "Proudly done with",
 	"spicy": "Add some spicy",
-	"starts-with-arepa": "Start with 'Arepa Ipsum ...'"
+	"starts-with-arepa": "Start with 'Arepa Ipsum ...'",
+	"venezuela-true-love": "True love for Venezuelan culture"
 }
