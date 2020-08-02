@@ -2,4 +2,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import './vendors';
+
 @import './buttons';
+@import './cards';
+@import './forms';
+@import './icons';
+
+.container {
+  @apply min-h-screen mx-auto px-4;
+}
+
+.page {
+  @apply pt-16 overflow-hidden;
+}

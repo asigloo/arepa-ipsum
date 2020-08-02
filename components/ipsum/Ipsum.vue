@@ -1,5 +1,13 @@
 <template>
   <div class="ipsum">
+    <button
+      class="clipboard-btn absolute animate__animated"
+      v-clipboard:copy="clipboardText"
+      v-clipboard:success="onCopy"
+      v-clipboard:error="onError"
+    >
+      <arepa-icon :name="'copy'" width="40" height="40" />
+    </button>
     <p class="mb-4" v-for="(paragraph, index) in result" :key="index">
       {{ paragraph }}
     </p>
@@ -25,11 +33,49 @@ const props = {
     type: Boolean,
   },
 };
+
+const computed = {
+  clipboardText() {
+    let text = '';
+    this.result.forEach(paragraph => {
+      text = `${paragraph}\n`;
+    });
+    return text;
+  },
+};
+
+const methods = {
+  generateLorem() {
+    this.result = generateLorem(
+      this.paragraphs,
+      this.spicy,
+      this.startWithArepa,
+    );
+  },
+  onCopy(e) {
+    e.trigger.classList.add('animate__rubberBand');
+    setTimeout(() => {
+      e.trigger.classList.remove('animate__rubberBand');
+    }, 800);
+  },
+  onError(e) {},
+};
+
+const watch = {
+  $route() {
+    this.generateLorem();
+  },
+};
+
 export default {
   name: 'arepaIpsum',
   data,
+  computed,
+  props,
+  methods,
+  watch,
   mounted() {
-    this.result = generateLorem(2, true);
+    this.generateLorem();
   },
 };
 </script>

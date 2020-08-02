@@ -25,7 +25,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['@/plugins/vue-clipboard.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -45,6 +45,7 @@ export default {
     'nuxt-webfontloader',
     ['nuxt-svgicon', { tagName: 'arepa-icon', classPrefix: 'arepa-svg' }],
     NuxtI18N,
+    '@asigloo/vue-dynamic-forms/nuxt',
   ],
   webfontloader: {
     custom: {

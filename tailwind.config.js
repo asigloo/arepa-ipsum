@@ -1,15 +1,15 @@
 /*
-** TailwindCSS Configuration File
-**
-** Docs: https://tailwindcss.com/docs/configuration
-** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
-*/
+ ** TailwindCSS Configuration File
+ **
+ ** Docs: https://tailwindcss.com/docs/configuration
+ ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
+ */
 module.exports = {
   theme: {
     fontFamily: {
-      'display': ['Montserrat'],
-      'sans': ['Hind', '-apple-system', 'BlinkMacSystemFont'],
-      'serif': ['Montserrat', 'Georgia', 'Cambria']
+      display: ['Montserrat'],
+      sans: ['Hind', '-apple-system', 'BlinkMacSystemFont'],
+      serif: ['Montserrat', 'Georgia', 'Cambria'],
     },
     extend: {
       colors: {
@@ -34,12 +34,12 @@ module.exports = {
           700: '#281D0F',
           800: '#1E160B',
           900: '#140E08',
-        }
+        },
       },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/custom-forms')],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',
@@ -48,7 +48,7 @@ module.exports = {
       'layouts/**/*.vue',
       'pages/**/*.vue',
       'plugins/**/*.js',
-      'nuxt.config.js'
-    ]
-  }
-}
+      'nuxt.config.js',
+    ],
+  },
+};

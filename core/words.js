@@ -921,4 +921,5 @@ export const SPICY_SENTENCES = [
   'mamadera de gallo',
   'cenicero e’ moto',
   'vergación',
+  'Na webona vladimil',
 ];
