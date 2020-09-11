@@ -66,6 +66,8 @@ export default {};
 .footer-logo {
   width: 64px;
   height: 64px;
+  opacity: 0.8;
+  filter: grayscale(1);
 }
 
 .footer-language-menu {

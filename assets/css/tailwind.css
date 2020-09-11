@@ -9,6 +9,10 @@
 @import './forms';
 @import './icons';
 
+body {
+  background-color: #fcfcfc;
+}
+
 .container {
   @apply mx-auto px-4;
 }

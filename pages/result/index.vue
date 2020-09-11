@@ -2,8 +2,8 @@
   <div class="result page">
     <div class="container">
       <div class="flex flex-wrap -mx-2">
-        <div class="box px-2 w-full md:w-4/6">
-          <div ref="result-card" class="card result-card mb-8 relative">
+        <div class="box px-2 w-full md:w-4/6 mb-8 md:mb-16">
+          <div ref="result-card" class="card result-card relative">
             <div
               class="p-6 text-gray-700 text-base"
               :class="scrollStyles"
@@ -13,12 +13,12 @@
             </div>
           </div>
         </div>
-        <div class="box px-2 w-full md:w-2/6">
+        <div class="box px-2 w-full md:w-2/6 mb-8">
           <div class="card p-6">
             Publicidad
           </div>
         </div>
-        <div class="box px-2 w-full md:w-4/6">
+        <div class="box px-2 w-full md:w-4/6 mb-8">
           <div class="card">
             <Form />
           </div>
