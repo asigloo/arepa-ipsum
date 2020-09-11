@@ -1,15 +1,17 @@
 {
 	"all-rights-reserved": "Todos los derechos reservados",
 	"aria-language-menu": "Menú de cambio de idioma",
-	"dale-chamo": "Dale chamo",
+	"dale-chamo": "Dale chamo/a",
 	"description": "Generador de texto aleatorio basado en la cultura gastronómica venezolana.",
-	"generate": "Genérame esta.",
+	"generate": "Genérame esta",
 	"paragraphs": "Párrafos",
-	"paragraphs-validation": "El número de  párrafos debe ser mayor de 0",
+	"paragraphs-validation": "El número de párrafos debe ser mayor de 0",
 	"proudly-made-with": "Hecho en ",
 	"spicy": "Ponle picante",
 	"starts-with-arepa": "Comenzar con 'Arepa Ipsum...'",
   "venezuela-true-love": "El verdadero amor, por la cultura venezolana",
   "buy-me-an-arepa": "Brindame una arepa",
-  "result-copied-to-clipboard": "Resultado copiado"
+  "result-copied-to-clipboard": "Resultado copiado",
+  "illustrations-made-by": "Ilustraciones hechas por: ",
+  "support-text": "Si te has tripeado la aplicación y quieres apoyar al desarrollador hacer mas cosas cool como esta puedes contribuir brindandole una arepa haciendo click en el link de abajo."
 }

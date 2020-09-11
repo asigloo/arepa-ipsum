@@ -15,6 +15,8 @@ export default [
     ],
     defaultLocale: 'es',
     noPrefixDefaultLocale: true,
+    seo: true,
+    baseUrl: 'https://arepaipsum.com',
     vuex: {
       // Module namespace
       moduleName: 'i18n',
