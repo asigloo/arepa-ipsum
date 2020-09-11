@@ -25,7 +25,18 @@
         />
         <LanguageMenu class="footer-language-menu" />
       </div>
-      <div class="w-full md:w-1/3 mb-4 order-3"></div>
+      <div
+        class="w-full md:w-1/3 mb-4 order-3 text-xs text-pernil-400 text-right"
+      >
+        {{ $t('illustrations-made-by') }}
+        <a
+          href="https://www.instagram.com/andrade.art/?hl=es"
+          class="text-aguacate-500 hover:text-aguacate-600"
+          rel="noopener"
+          target="_blank"
+          >@andrade.art</a
+        >
+      </div>
       <div
         class="absolute w-full hidden md:block py-2 bottom-0 left-0 bg-black text-gray-800 text-xs"
       >
@@ -37,6 +48,14 @@
             rel="noopener"
             target="_blank"
             >Nuxt</a
+          >
+          +
+          <a
+            class="text-gray-700 hover:text-gray-600"
+            href="https://tailwindcss.com/"
+            rel="noopener"
+            target="_blank"
+            >Tailwind</a
           >, hosting
 
           <a

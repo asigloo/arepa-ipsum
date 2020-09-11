@@ -20,7 +20,7 @@
 
           <SupportCard />
         </div>
-        <div class="box px-2 w-full md:w-4/6 mb-8">
+        <div class="box px-2 w-full md:w-4/6 mb-24">
           <div class="card">
             <Form />
           </div>

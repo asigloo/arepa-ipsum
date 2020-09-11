@@ -1,5 +1,6 @@
 <template>
-  <div class="support-card card p-6 relative">
+  <div class="support-card card p-6 relative text-gray-700">
+    <p class="mb-4 text-sm">{{ $t('support-text') }}</p>
     <a
       class="buy-me-arepa-btn btn btn-light absolute z-10 hover:shadow-md animate__animated animate__tada"
       href="https://www.buymeacoffee.com/alvarosaburido"
@@ -33,7 +34,7 @@ export default {
 
 <style>
 .support-card {
-  height: 400px;
+  height: 500px;
 }
 
 .grandulated-flower {
@@ -52,7 +53,7 @@ export default {
 }
 
 .buy-me-arepa-btn {
-  top: 40%;
+  top: 50%;
   left: 3rem;
 }
 </style>
