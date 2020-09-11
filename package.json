@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "export": "nuxt export",
+    "export": "nuxt build && nuxt export",
     "export:serve": "nuxt build && nuxt export && nuxt serve",
     "serve": "nuxt serve",
     "test": "jest"
@@ -19,10 +19,13 @@
     "nuxt-i18n": "^6.13.1",
     "nuxt-svgicon": "^1.2.7",
     "nuxt-webfontloader": "^1.1.0",
-    "vue-clipboard2": "^0.3.1"
+    "vue-clipboard2": "^0.3.1",
+    "vue-toasted": "^1.1.28"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^2.1.0",
+    "@nuxtjs/google-adsense": "^1.1.3",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/tailwindcss": "^3.0.2",
     "@tailwindcss/custom-forms": "^0.2.1",
     "@vue/test-utils": "^1.0.3",
     "babel-core": "7.0.0-bridge.0",

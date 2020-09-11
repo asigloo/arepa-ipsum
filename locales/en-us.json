@@ -1,9 +1,17 @@
 {
-	"dale-chamo": "Let's do it \"Chamo\"",
+	"all-rights-reserved": "All Rights Reserved",
+	"aria-language-menu": "Language change menu",
+	"dale-chamo": "Let's do it \"Chamo/a\"",
 	"description": "Random text generator based on Venezuelan street food culture.",
-	"generate": "Generate.",
+	"generate": "Generate",
 	"paragraphs": "Paragraphs",
 	"paragraphs-validation": "The number of paragraphs must be greater than 0",
+	"proudly-made-with": "Proudly done with",
 	"spicy": "Add some spicy",
-	"starts-with-arepa": "Start with 'Arepa Ipsum ...'"
+	"starts-with-arepa": "Start with 'Arepa Ipsum ...'",
+  "venezuela-true-love": "True love for Venezuelan culture",
+  "buy-me-an-arepa": "Buy me an arepa",
+  "result-copied-to-clipboard": "Result copied to Clipboard",
+  "illustrations-made-by": "Illustrations made by: ",
+  "support-text": "If you liked the application & you want to support the developer to continue doing more cool things like this, you can contribute by buying him an arepa haciendo click en el botón de abajo."
 }

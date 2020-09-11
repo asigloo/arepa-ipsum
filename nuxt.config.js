@@ -25,7 +25,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['@/plugins/vue-clipboard.js'],
+  plugins: ['@/plugins/vue-clipboard.js', '@/plugins/vue-toasted.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -37,6 +37,12 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-26356857-7',
+      },
+    ],
   ],
   /*
    ** Nuxt.js modules
@@ -46,15 +52,21 @@ export default {
     ['nuxt-svgicon', { tagName: 'arepa-icon', classPrefix: 'arepa-svg' }],
     NuxtI18N,
     '@asigloo/vue-dynamic-forms/nuxt',
+    [
+      '@nuxtjs/google-adsense',
+      {
+        id: 'ca-pub-3745332358984365',
+      },
+    ],
   ],
   webfontloader: {
     custom: {
-      families: ['Montserrat:n7', 'Hind:n3,n4'],
+      families: ['Montserrat:n7', 'Hind:n3,n4,n6'],
       urls: [
         // for each Google Fonts add url + options you want
         // here add font-display option
         'https://fonts.googleapis.com/css?family=Montserrat:700&display=swap',
-        'https://fonts.googleapis.com/css?family=Hind:300,400&display=swap',
+        'https://fonts.googleapis.com/css?family=Hind:300,400,600&display=swap',
       ],
     },
   },

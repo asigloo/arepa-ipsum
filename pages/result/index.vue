@@ -2,26 +2,49 @@
   <div class="result page">
     <div class="container">
       <div class="flex flex-wrap -mx-2">
-        <div class="box px-2 w-full md:w-4/6">
-          <div ref="result-card" class="card result-card mb-8 relative">
+        <div class="box px-2 w-full md:w-4/6 mb-8">
+          <transition
+            name="fade-in"
+            enter-active-class="animate__animated animate__fadeIn"
+            leave-active-class="animate__animated animate__fadeOut"
+          >
             <div
-              class="p-6 text-gray-700 text-base"
-              :class="scrollStyles"
-              @scroll="onResultScroll"
+              ref="result-card"
+              class="card result-card relative"
+              v-show="showIpsum"
             >
-              <Ipsum v-if="query" v-bind="query" />
+              <div
+                class="p-6 text-gray-700 text-base"
+                :class="scrollStyles"
+                @scroll="onResultScroll"
+              >
+                <Ipsum v-if="query" v-bind="query" />
+              </div>
             </div>
-          </div>
+          </transition>
         </div>
-        <div class="box px-2 w-full md:w-2/6">
-          <div class="card p-6">
-            Publicidad
+        <div class="box px-2 w-full md:w-2/6 mb-8">
+          <div class="card p-6 mb-4">
+            <adsbygoogle />
           </div>
+          <transition
+            name="fade-in"
+            enter-active-class="animate__animated animate__fadeIn"
+            leave-active-class="animate__animated animate__fadeOut"
+          >
+            <SupportCard v-show="showSupport" />
+          </transition>
         </div>
-        <div class="box px-2 w-full md:w-4/6">
-          <div class="card">
-            <Form />
-          </div>
+        <div class="box px-2 w-full md:w-4/6 mb-24">
+          <transition
+            name="fade-in"
+            enter-active-class="animate__animated animate__fadeIn"
+            leave-active-class="animate__animated animate__fadeOut"
+          >
+            <div class="card" v-show="showForm">
+              <Form />
+            </div>
+          </transition>
         </div>
       </div>
     </div>
@@ -32,6 +55,9 @@
 const data = () => ({
   gradientTop: false,
   gradientBottom: true,
+  showIpsum: false,
+  showSupport: false,
+  showForm: false,
 });
 
 const computed = {
@@ -72,6 +98,17 @@ export default {
     };
   },
   watch,
+  mounted() {
+    setTimeout(() => {
+      this.showIpsum = true;
+    }, 200);
+    setTimeout(() => {
+      this.showForm = true;
+    }, 400);
+    setTimeout(() => {
+      this.showSupport = true;
+    }, 800);
+  },
 };
 </script>
 

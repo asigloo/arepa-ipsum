@@ -8,11 +8,16 @@
 @import './cards';
 @import './forms';
 @import './icons';
+@import './toast';
+
+body {
+  background-color: #fcfcfc;
+}
 
 .container {
-  @apply min-h-screen mx-auto px-4;
+  @apply mx-auto px-4;
 }
 
 .page {
-  @apply pt-16 overflow-hidden;
+  @apply pt-16 overflow-hidden  min-h-screen;
 }
