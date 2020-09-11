@@ -48,7 +48,7 @@ export default {
 
 .blue-guacamaya {
   transform: scale(0.8);
-  right: -1rem;
+  right: -4rem;
   top: 5rem;
 }
 
