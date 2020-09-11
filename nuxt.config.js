@@ -25,7 +25,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['@/plugins/vue-clipboard.js'],
+  plugins: ['@/plugins/vue-clipboard.js', '@/plugins/vue-toasted.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -49,12 +49,12 @@ export default {
   ],
   webfontloader: {
     custom: {
-      families: ['Montserrat:n7', 'Hind:n3,n4'],
+      families: ['Montserrat:n7', 'Hind:n3,n4,n6'],
       urls: [
         // for each Google Fonts add url + options you want
         // here add font-display option
         'https://fonts.googleapis.com/css?family=Montserrat:700&display=swap',
-        'https://fonts.googleapis.com/css?family=Hind:300,400&display=swap',
+        'https://fonts.googleapis.com/css?family=Hind:300,400,600&display=swap',
       ],
     },
   },

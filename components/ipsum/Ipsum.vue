@@ -54,6 +54,11 @@ const methods = {
   },
   onCopy(e) {
     e.trigger.classList.add('animate__rubberBand');
+    this.$toasted.success('Result copied to clipboard', {
+      position: 'bottom-right',
+      duration: 2000,
+      className: 'arepa-toast',
+    });
     setTimeout(() => {
       e.trigger.classList.remove('animate__rubberBand');
     }, 800);

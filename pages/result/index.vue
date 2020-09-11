@@ -2,7 +2,7 @@
   <div class="result page">
     <div class="container">
       <div class="flex flex-wrap -mx-2">
-        <div class="box px-2 w-full md:w-4/6 mb-8 md:mb-16">
+        <div class="box px-2 w-full md:w-4/6 mb-8">
           <div ref="result-card" class="card result-card relative">
             <div
               class="p-6 text-gray-700 text-base"
@@ -14,9 +14,11 @@
           </div>
         </div>
         <div class="box px-2 w-full md:w-2/6 mb-8">
-          <div class="card p-6">
+          <div class="card p-6 mb-4">
             Publicidad
           </div>
+
+          <SupportCard />
         </div>
         <div class="box px-2 w-full md:w-4/6 mb-8">
           <div class="card">

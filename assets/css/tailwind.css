@@ -8,6 +8,7 @@
 @import './cards';
 @import './forms';
 @import './icons';
+@import './toast';
 
 body {
   background-color: #fcfcfc;

@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="box px-2 w-full md:w-2/6">
-          <div class="card p-6">
+          <div class="card p-6 mb-4">
             Publicidad
           </div>
         </div>
