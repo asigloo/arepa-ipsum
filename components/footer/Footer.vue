@@ -40,31 +40,34 @@
       <div
         class="absolute w-full hidden md:block py-2 bottom-0 left-0 bg-black text-gray-800 text-xs"
       >
-        <div class="container">
-          {{ $t('proudly-made-with') }}
-          <a
-            class="text-gray-700 hover:text-gray-600"
-            href="https://nuxtjs.org/"
-            rel="noopener"
-            target="_blank"
-            >Nuxt</a
-          >
-          +
-          <a
-            class="text-gray-700 hover:text-gray-600"
-            href="https://tailwindcss.com/"
-            rel="noopener"
-            target="_blank"
-            >Tailwind</a
-          >, hosting
+        <div class="container flex">
+          <div class="w-1/2">
+            {{ $t('proudly-made-with') }}
+            <a
+              class="text-gray-700 hover:text-gray-600"
+              href="https://nuxtjs.org/"
+              rel="noopener"
+              target="_blank"
+              >Nuxt</a
+            >
+            +
+            <a
+              class="text-gray-700 hover:text-gray-600"
+              href="https://tailwindcss.com/"
+              rel="noopener"
+              target="_blank"
+              >Tailwind</a
+            >, hosting
 
-          <a
-            class="text-gray-700 hover:text-gray-600"
-            href="https://www.netlify.com//"
-            rel="noopener"
-            target="_blank"
-            >Netlify</a
-          >.
+            <a
+              class="text-gray-700 hover:text-gray-600"
+              href="https://www.netlify.com//"
+              rel="noopener"
+              target="_blank"
+              >Netlify</a
+            >.
+          </div>
+          <div class="w-1/2 text-right text-gray-900">{{ version }}</div>
         </div>
       </div>
     </div>
@@ -72,7 +75,16 @@
 </template>
 
 <script>
-export default {};
+import pkg from '@/package.json';
+
+export default {
+  name: 'footer',
+  computed: {
+    version() {
+      return `${process.env.NODE_ENV} v${pkg.version}`;
+    },
+  },
+};
 </script>
 
 <style>
