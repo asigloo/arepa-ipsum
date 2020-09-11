@@ -15,7 +15,7 @@
         </div>
         <div class="box px-2 w-full md:w-2/6 mb-8">
           <div class="card p-6 mb-4">
-            Publicidad
+            <adsbygoogle />
           </div>
 
           <SupportCard />

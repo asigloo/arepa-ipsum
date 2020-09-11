@@ -52,6 +52,12 @@ export default {
     ['nuxt-svgicon', { tagName: 'arepa-icon', classPrefix: 'arepa-svg' }],
     NuxtI18N,
     '@asigloo/vue-dynamic-forms/nuxt',
+    [
+      '@nuxtjs/google-adsense',
+      {
+        id: 'ca-pub-3745332358984365',
+      },
+    ],
   ],
   webfontloader: {
     custom: {
