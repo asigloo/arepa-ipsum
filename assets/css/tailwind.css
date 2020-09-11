@@ -2,14 +2,21 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import './vendors';
+
 @import './buttons';
 @import './cards';
 @import './forms';
+@import './icons';
+
+body {
+  background-color: #fcfcfc;
+}
 
 .container {
-  @apply min-h-screen mx-auto px-4;
+  @apply mx-auto px-4;
 }
 
 .page {
-  @apply pt-16;
+  @apply pt-16 overflow-hidden  min-h-screen;
 }
