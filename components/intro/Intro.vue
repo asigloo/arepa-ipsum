@@ -1,5 +1,5 @@
 <template>
-  <div class="intro absolute w-full top-0 bg-white">
+  <div class="intro absolute w-full top-0 bg-white z-50">
     <div
       class="container  min-h-screen flex justify-center items-center"
       :class="{ animate: animate }"
@@ -13,7 +13,9 @@
           class="transition ease-in duration-700"
           :class="{ invisible: animate }"
         >
-          <p class="text-gray-700 mb-4">{{ $t('description') }}</p>
+          <p class="text-gray-700 mb-4 text-center md:text-left">
+            {{ $t('description') }}
+          </p>
           <Button
             type="pernil"
             class="mx-auto block"

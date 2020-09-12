@@ -2,7 +2,7 @@ const OPEN_GRAPH = [
   {
     hid: 'og:site_name',
     property: 'og:site_name',
-    content: 'Arepa Ipsum | Generador Ipsum inspirado en comida venezolana',
+    content: 'Arepa Ipsum | Generador Ipsum inspirado en la comida venezolana',
   },
   {
     hid: 'og:description',
@@ -13,7 +13,7 @@ const OPEN_GRAPH = [
   {
     hid: 'og:title',
     property: 'og:title',
-    content: 'Arepa Ipsum | Generador Ipsum inspirado en comida venezolana',
+    content: 'Arepa Ipsum | Generador Ipsum inspirado en la comida venezolana',
   },
   {
     hid: 'og:url',
@@ -24,7 +24,7 @@ const OPEN_GRAPH = [
     hid: 'og:image',
     property: 'og:image',
     content:
-      'https://res.cloudinary.com/alvarosaburido/image/upload/v1599822222/Arepa%20Ipsum/og-es_hvexug.png',
+      'https://res.cloudinary.com/alvarosaburido/image/upload/v1599897330/Arepa%20Ipsum/og-es_iem2ll.png',
   },
   { property: 'og:updated_time', content: new Date().toISOString() },
 ];
@@ -35,7 +35,7 @@ const TWITTER = [
   {
     hid: 'twitter:title',
     name: 'twitter:title',
-    content: 'Arepa Ipsum | Generador Ipsum inspirado en comida venezolana',
+    content: 'Arepa Ipsum | Generador Ipsum inspirado en la comida venezolana',
   },
   {
     hid: 'twitter:description',
@@ -47,17 +47,17 @@ const TWITTER = [
     hid: 'twitter:image',
     name: 'twitter:image',
     content:
-      'https://res.cloudinary.com/alvarosaburido/image/upload/v1599822222/Arepa%20Ipsum/og-es_hvexug.png',
+      'https://res.cloudinary.com/alvarosaburido/image/upload/v1599897330/Arepa%20Ipsum/og-es_iem2ll.png',
   },
   {
     hid: 'twitter:image:alt',
     name: 'twitter:image:alt',
-    content: 'Arepa Ipsum | Generador Ipsum inspirado en comida venezolana',
+    content: 'Arepa Ipsum | Generador Ipsum inspirado en la comida venezolana',
   },
 ];
 
 export default {
-  title: 'Arepa Ipsum | Generador Ipsum inspirado en comida venezolana',
+  title: 'Arepa Ipsum | Generador Ipsum inspirado en la comida venezolana',
   meta: [
     {
       charset: 'utf-8',

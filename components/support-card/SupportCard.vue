@@ -43,15 +43,20 @@ export default {
 }
 
 .red-guacamaya {
-  transform: scale(0.8);
+  transform: scale(0.6);
+
+  @media (min-width: 640px) {
+    transform: scale(0.8);
+  }
 }
 
 .blue-guacamaya {
-  transform: scale(0.8);
-  right: 0;
-  top: 5rem;
+  transform: scale(0.6);
+  right: -3rem;
+  top: 8rem;
 
   @media (min-width: 640px) {
+    transform: scale(0.8);
     right: -4rem;
   }
 }

@@ -21,6 +21,10 @@ export default {
    ** Global CSS
    */
   css: [],
+  server: {
+    host: '0.0.0.0',
+    port: 1811, // default: 3000
+  },
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins

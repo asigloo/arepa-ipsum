@@ -2,7 +2,7 @@
   <div class="result page">
     <div class="container">
       <div class="flex flex-wrap -mx-2 justify-around">
-        <div class="box px-2 w-full md:w-1/2">
+        <div class="box px-2 w-full lg:w-1/2">
           <transition
             name="fade-in"
             enter-active-class="animate__animated animate__fadeIn"
@@ -27,12 +27,12 @@
             enter-active-class="animate__animated animate__fadeIn"
             leave-active-class="animate__animated animate__fadeOut"
           >
-            <div class="card mb-24" v-show="showForm">
+            <div class="card mb-8 lg:mb-24" v-show="showForm">
               <Form />
             </div>
           </transition>
         </div>
-        <div class="box px-2 w-full md:w-1/3 mb-8">
+        <div class="box px-2 w-full lg:w-1/3 mb-8">
           <div class="">
             <adsbygoogle />
           </div>
