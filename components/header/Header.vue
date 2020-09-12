@@ -1,5 +1,7 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap py-2 px-4">
+  <nav
+    class="flex items-center justify-between flex-wrap py-2 px-4 flex-col md:flex-row"
+  >
     <div class="md:absolute md:pl-8">
       <Logo />
     </div>

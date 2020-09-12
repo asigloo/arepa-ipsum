@@ -78,7 +78,7 @@
 import pkg from '@/package.json';
 
 export default {
-  name: 'footer',
+  name: 'arepaFooter',
   computed: {
     version() {
       return `${process.env.NODE_ENV} v${pkg.version}`;
