@@ -48,8 +48,12 @@ export default {
 
 .blue-guacamaya {
   transform: scale(0.8);
-  right: -4rem;
+  right: 0;
   top: 5rem;
+
+  @media (min-width: 640px) {
+    right: -4rem;
+  }
 }
 
 .buy-me-arepa-btn {

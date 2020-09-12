@@ -26,7 +26,7 @@
         <LanguageMenu class="footer-language-menu" />
       </div>
       <div
-        class="w-full md:w-1/3 mb-4 order-3 text-xs text-pernil-400 text-right"
+        class="w-full md:w-1/3 mb-4 order-3 text-xs text-pernil-400 text-center md:text-right"
       >
         {{ $t('illustrations-made-by') }}
         <a

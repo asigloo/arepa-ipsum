@@ -11,13 +11,6 @@
         </h1>
       </div>
     </div>
-    <div class="block md:hidden">
-      <button
-        class="flex items-center px-3 py-2 border rounded text-aguacate-600 border-aguacate-600 hover:text-white hover:bg-aguacate-600 hover:border-white"
-      >
-        <arepa-icon class="fill-current h-3 w-3" name="menu" />
-      </button>
-    </div>
   </nav>
 </template>
 
