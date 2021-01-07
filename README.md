@@ -1,4 +1,4 @@
-[Webpage Banner](https://res.cloudinary.com/alvarosaburido/image/upload/v1599822144/Arepa%20Ipsum/og_x8v5fr.png)
+![Webpage Banner](https://res.cloudinary.com/alvarosaburido/image/upload/v1599822144/Arepa%20Ipsum/og_x8v5fr.png)
 
 # Arepa Ipsum
 
